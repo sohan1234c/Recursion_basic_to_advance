@@ -1,19 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void index(int n)
+int index(int n)
 {
-    if(n==1)
+    if(n==0)
     {
-        cout << 1;
-        return ;
+        return 1;
     }
 
-    cout << n << endl;
-    index(n - 1);
+    return n*index(n-1) ;
+    
 }
 
 int main() {
-    index(100);
+    
+    cout<<index(5)<<endl;
     return 0;
 }
