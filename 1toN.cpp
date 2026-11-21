@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int onetoN(int n)
+int  onetoN(int n)
 {
 
     if (n==1)
@@ -10,12 +10,15 @@ int onetoN(int n)
     }
     
     return n;
-    1toN(n+1);
-    
+    onetoN(n + 1);
 }
 
 int main() {
-   
-    cout << onetoN(5)<<endl;
+    int n;
+    cin >> n;
+    for (int i = 1; i <= onetoN(n);i++)
+       {
+           cout << onetoN(i) << endl;
+       }
     return 0;
 }
