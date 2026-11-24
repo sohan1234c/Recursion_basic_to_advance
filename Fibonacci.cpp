@@ -8,17 +8,16 @@ int fibonacci(int n)
         return n;
     }
 
-    return fibonacci(n - 1) + fibonacci(n - 2);
+    return fibonacci(n-1 ) + fibonacci(n - 2);
 }
 
 int main()
 {
-    for (int i = 0; i <= 10;i++)
-        cout << fibonacci(i) << ' ';
+    int n;
+    cin >> n;
+    cout << fibonacci(n);
+
     return 0;
 }
 
-
-
-
-//0 1 1 2 3 5 8 
+// //0 1 1 2 3  5
